@@ -1,6 +1,6 @@
 
 IMAGE_REPOSITORY:=azukiapp/azktcl
-IMAGE_TAG:=0.0.1
+IMAGE_TAG:=0.0.2
 IMAGE:=${IMAGE_REPOSITORY}:${IMAGE_TAG}
 DOCKER:="docker"
 

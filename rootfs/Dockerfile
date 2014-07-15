@@ -22,7 +22,7 @@ ENV TCZ_DEPS ncurses bash \
 # Install the TCZ dependencies
 RUN for dep in $TCZ_DEPS; do \
         echo "Download $TCL_REPO_BASE/tcz/$dep.tcz" &&\
-        curl -L -o /tmp/$dep.tcz $TCL_REPO_BASE/tcz/$dep.tcz && \
+        curl -L -sS -o /tmp/$dep.tcz $TCL_REPO_BASE/tcz/$dep.tcz && \
         unsquashfs -f -d $ROOTFS /tmp/$dep.tcz && \
         rm -f /tmp/$dep.tcz ;\
     done
