@@ -13,5 +13,5 @@ WORKDIR /data
 CMD ["/bin/bash"]
 
 # Expose ports.
-EXPOSE 53/tcp
+EXPOSE 53/udp
 EXPOSE 80
